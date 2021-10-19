@@ -11,3 +11,128 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.navbar{
+  background-color:#fff !important;
+}
+.navbar-brand{
+  font-size: 1.5rem !important;
+  color: rgb(5, 5, 5) !important;
+}
+.navbar a{
+  font-size: 1.5rem !important;
+  text-transform: capitalize !important;
+}
+.navbar a:hover{
+  color: rgb(255, 115, 0) !important;
+}
+.active_menu{
+  font-weight: bold;
+  border-bottom: 1px solid rgb(241, 90, 90);
+}
+/* asdf */
+#header{
+  width: 100%;
+  height: 80vh;
+}
+#header h1{
+  margin: 0 0 0 0;
+  font-size: 42px;
+  font-weight: 350;
+  color:black;
+}
+#header h2{
+  margin: 0 0 0 0;
+  font-size: 26px;
+  font-weight: 200;
+  color:black;
+}
+#header .brand-name{
+  color: rgb(246, 10, 49);
+  font-size: 50px;
+  font-weight: 600 !important;
+}
+#header .btn-get-started{
+  font-weight: 500;
+  font-size:26px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition:0.3s;
+  color:rgb(43, 133, 133);
+  border: 2px solid rgb(43, 133, 133);
+  text-decoration: none;
+}
+#header .btn-get-started:hover{
+  background-color: rgb(43, 133, 133);
+  color:white;
+}
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down{
+  0%{
+    transform:translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+@keyframes up-down{
+  0%{
+    transform:translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+/* blog */
+.card{
+width: 100%;
+height: 100%;
+
+}
+.card img{
+  width: 100%;
+  object-fit: contain;
+}
+.loading{
+  display: block;
+  position: fixed;
+  z-index: 1031; /* High z-index so it is on top of the page */
+  top: 50%;
+  right: 50%; /* or: left: 50%; */
+}
+
+/* responsive */
+@media (max-width:991px){
+  #header{
+    height:80vh;
+    text-align: center;
+  }
+  #header .header-img{
+    text-align: center;
+  }
+  #header .header-img img{
+width : 60%;
+  }
+}
+@media (max-width:768px){
+  #header{
+    margin-top: 20px;
+  }
+  #header h1{
+    font-size: 28px;
+  }
+  #header h2{
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  #header .header-img img{
+width : 70%;
+  }
+  #header .btn-get-started{
+   
+  }
+}
+

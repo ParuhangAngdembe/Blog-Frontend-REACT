@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Redirect, Route, Switch } from "react-router";
+import Home from "./components/Home";
+import Blog from "./components/Blog";
+import Contact from "./components/Contact";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/blog" exact component={Blog} />
+        <Route path="/contact" exact component={Contact} />
+        <Redirect to="/" />
+      </Switch>
+      <Footer />
+    </>
   );
-}
-
+};
 export default App;
+// switch job is to view the first match, so without exact... '/' first match is sent to {Home}

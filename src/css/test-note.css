@@ -1,0 +1,26 @@
+/* Doing This Is A Bad Practice, don't target elements like this */
+img{
+    height: 600px;
+}
+h3,p{color: black;}
+
+/* note::
+without giving proper class name this style sheet effects all the components
+
+if you want to localize CSS rules, 
+then you would have to 'Modular Stylesheets'.
+
+import styles from './index.module.scss';
+.....{style.'className'}
+<h1 className={style.heading}>Landing page</h1>
+
+--------------------------
+Also We Can::
+<div className={style.homepage}>
+    <h1>Landing page</h1>
+</div>
+-----------------------
+.homepage{
+    h1{}
+}
+*/
