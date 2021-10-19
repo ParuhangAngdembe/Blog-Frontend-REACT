@@ -1,5 +1,5 @@
 # This is a Frontend for a Blog Web Application
 
-![](project%20images/blog-post.jpg)
-![](project%20images/blog-responsive.jpg)
-![](project%20images/DRF-api.jpg)
+![](projects%20images/blog-post.jpg)
+![](projects%20images/blog-responsive.jpg)
+![](projects%20images/DRF-api.jpg)
